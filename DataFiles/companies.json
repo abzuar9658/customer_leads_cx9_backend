@@ -1,0 +1,82 @@
+{
+    "companies" : [
+      { 
+         "id":"1",
+         "name": "intellicon",
+         "email": "intellicon@gmail.com",
+         "affiliation":["jazz", "contegris", "devsinc","whatsapp"]
+      },
+      {
+        "id":"2",
+        "name": "daraz",
+        "email": "daraz@gmail.com",
+        "affiliation":["daraz", "contegris", "devsinc"]
+      },
+      {
+        "id":"3",
+        "name": "devsinc",
+        "email": "devsinc@gmail.com",
+        "affiliation":["contegris","daraz"]
+      },
+      {
+        "id":"4",
+        "name": "j.",
+        "email": "jdot@gmail.com",
+        "affiliation":["contegris","intellicon", "devsinc","facebook"]
+      },
+      {
+        "id":"5",
+        "name": "airlift",
+        "email": "airlift@gmail.com",
+        "affiliation":["contegris","daraz","facebook","whatsapp"]
+      },
+      {
+        "id":"6",
+        "name": "pia",
+        "email": "pia@gmail.com",
+        "affiliation":["daraz","facebook","whatsapp"]
+      },
+      {
+        "id":"7",
+        "name": "qarshi",
+        "email": "qarshi@gmail.com",
+        "affiliation":["contegris","whatsapp","instagram"]
+      },
+      {
+        "id":"8",
+        "name": "cool & cool",
+        "email": "coolandcool@gmail.com",
+        "affiliation":["contegris","facebook","intellicon"]
+      },
+      {
+        "id":"9",
+        "name": "facebook",
+        "email": "facebook@gmail.com",
+        "affiliation":["contegris","whatsapp", "instagram"]
+      },
+      {
+        "id":"10",
+        "name": "whatsapp",
+        "email": "whatsapp@gmail.com",
+        "affiliation":["facebook","contegris","instagram","intellicon"]
+      },
+      {
+        "id":"11",
+        "name": "instagram",
+        "email": "instagram@gmail.com",
+        "affiliation":["contegris","facebook","intellicon","whatsapp"]
+      },
+      {
+        "id":"12",
+        "name": "twitter",
+        "email": "twitter@gmail.com",
+        "affiliation":["contegris","intellicon"]
+      },
+      { 
+        "id":"13",
+        "name": "contegris",
+        "email": "contegris@gmail.com",
+        "affiliation":["jazz", "intellicon","whatsapp"]
+     }
+    ]
+  }
