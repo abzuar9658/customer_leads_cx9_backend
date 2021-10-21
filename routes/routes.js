@@ -35,10 +35,21 @@ router.post("/api/login", async(req, res) => {
 router.post("/api/leads", async(req, res) => {
     //console.log("REQEST: ", req.headers.authorization.split(" ")[1]);
     try {
-        const { companyId } = req.body;
+        const { companyId, page } = req.body;
+        //     const response = await axios.post(
+        //         `https://cx9dev.contegris.com:8443/apis/adb/companies/searchLeads?$top=10&$skip=${(
+        //     page * 10
+        //   ).toString()}`, { id: "132" }, { headers: { Authorization: req.headers.authorization.split(" ")[1] } }
+        //     );
+
         const response = await axios.post(
-            "https://cx9dev.contegris.com:8443/apis/adb/companies/searchLeads?$top=10&$skip=0", { id: "132" }, { headers: { Authorization: req.headers.authorization.split(" ")[1] } }
+            `https://cx9dev.contegris.com:8443/apis/leads/search?$top=10&$skip=${(
+        page * 10
+      ).toString()}&$filter=company eq 132`, { filters: [] }, {
+                headers: { Authorization: req.headers.authorization.split(" ")[1] },
+            }
         );
+        console.log(response);
         return res.status(200).json({
             status: "ok",
             data: response.data.data,
